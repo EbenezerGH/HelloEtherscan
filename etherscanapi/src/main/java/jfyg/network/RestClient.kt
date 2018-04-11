@@ -11,7 +11,7 @@ import io.reactivex.schedulers.Schedulers
  */
 class RestClient {
 
-    private var baseUrl: String = "http://api.etherscan.io/" //TODO: #28
+    private var baseUrl: String = "http://api.etherscan.io/"
     private var networkService: NetworkService
 
     init {

@@ -22,9 +22,9 @@ interface AccountContract {
     fun getBalance(account: String?): Double?
 
     /**
-     * Return balances of multiple accounts seperated by commas
+     * Return balances of multiple accounts separated by commas
      */
-    fun getMultiBalance(accounts: List<String>?): ArrayList<Balances>?
+    fun getMultiBalance(accounts: ArrayList<String>?): ArrayList<Balances>?
 
     /**
      * Get list of blocks mined by address

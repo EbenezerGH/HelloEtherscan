@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "The Account Status is: ${account.getNetworkStatus()}")
             Log.d(TAG, "The Account Message is: ${account.getNetworkMessage()}")
             Log.d(TAG, "The Account Balance is: ${account.getBalance("0x82e4499D4b2A669831a3881d61BB24f7b620c61a")}")
+            Log.d(TAG, "The Account(1) Balance is: ${account.getMultiBalance(threeAddresses())?.get(1)?.balance}")
             Log.d(TAG, "The Account Size of Blocks is: ${account.getBlocks("0x82e4499D4b2A669831a3881d61BB24f7b620c61a")?.size}")
             Log.d(TAG, "The Account Size of Transactions is: ${account.getTransactions("0x82e4499D4b2A669831a3881d61BB24f7b620c61a")?.size}")
 
@@ -43,5 +44,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun threeAddresses(): ArrayList<String> {
+        val address = ArrayList<String>()
+        address.add("0x82e4499D4b2A669831a3881d61BB24f7b620c61a")
+        address.add("0x63a9975ba31b0b9626b34300f7f627147df1f526")
+        address.add("0x198ef1ec325a96cc354c7266a038be8b5c558f67")
+        return address
+    }
 
 }

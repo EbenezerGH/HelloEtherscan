@@ -46,7 +46,6 @@ interface NetworkService {
                         @Query("blocktype") blocktype: String?,
                         @Query("apikey") apikey: String?): Single<AccountBlockResponse>
 
-
     @GET("api")
     fun getAccountTransactions(@Query("module") module: String?,
                                @Query("action") action: String?,
