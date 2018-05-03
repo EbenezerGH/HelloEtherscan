@@ -8,4 +8,4 @@ data class BlockMined(var blockNumber: String? = null,
 
                       var blockReward: String? = null,
 
-                      var uncles: List<Uncle> = emptyList())
+                      var uncles: List<Uncle> = emptyList()) //test
