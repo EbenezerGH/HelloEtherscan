@@ -5,6 +5,8 @@
 
 # etherscan-android-api
 
+[![Join the chat at https://gitter.im/etherscan-android-api/Lobby](https://badges.gitter.im/etherscan-android-api/Lobby.svg)](https://gitter.im/etherscan-android-api/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 etherscan android api is an android wrapper for the [etherscan api](https://etherscan.io/apis).  This is just a module to handle networking calls.
 
 There are only a few [features](https://github.com/EbenezerGH/hello_etherscan/issues) left to add, however this version is completely safe to use.
